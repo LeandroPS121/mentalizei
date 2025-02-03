@@ -9,7 +9,7 @@ def login_view(request):
         
     else: 
         form = LoginForm()
-    return render(request, 'usuarios/login.html', {'form':form})
+    return render(request, 'login.html', {'form':form})
 
 def cadastrar_view(request):
     if request.method == 'POST':
@@ -21,4 +21,4 @@ def cadastrar_view(request):
         
     else: 
         form = CadastroForm()
-    return render(request, 'usuarios/cadastrar.html', {'form':form})
+    return render(request, 'cadastrar.html', {'form':form})
